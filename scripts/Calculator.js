@@ -2,14 +2,24 @@ let cal = {
     add: function (...num2) {
         let op = 0;
         num2.forEach(a => {
-            op += a;
+            if(op=== 0){
+                op = num2[0];
+            }
+            else{
+                op += a;
+            }
         })
         return op;
     },
     sub: function (...num2) {
         let op = 0;
         num2.forEach(a => {
-            op -= a;
+            if(op=== 0){
+                op = num2[0];
+            }
+            else{
+                op -= a;
+            }
         })
         return op;
     },
