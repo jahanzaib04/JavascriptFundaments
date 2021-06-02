@@ -1,102 +1,67 @@
-// Spread Syntax
+// The Window Object
 
-console.log('----------Spread Syntax----------');
+console.log('----------The Window Object----------');
 
-// Spread Syntax
+year = 1990;
 
-console.log('----------Spread Syntax----------');
+console.log(window.year);
 
+console.log(window.innerWidth);
 
-// Spread Syntax
+console.log(innerWidth);
 
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
+console.log(innerHeight)
 
 
-// Spread Syntax
+// Timers
 
-console.log('----------Spread Syntax----------');
+console.log('----------Timers----------');
 
-// Spread Syntax
+let timeoutID = setTimeout(function() {
+    console.log('1 Second passed');
+}, 1000);
 
-console.log('----------Spread Syntax----------');
+// if you need to cancel
+clearTimeout(timeoutID);
 
+let intervalId = setInterval(function () {
+    console.log('1 second passed');
+},1000);
 
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
+// if you need to cancel
+clearInterval(intervalId);
 
 
-// Spread Syntax
+// The Location Object
 
-console.log('----------Spread Syntax----------');
+console.log('----------The Location Object----------');
 
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
+console.log(location.href)
+console.log(location.pathname)
+console.log(location.port)
+console.log(location.host)
+console.log(location.protocol)
 
 
-// Spread Syntax
+// Selecting DOM Elements
 
-console.log('----------Spread Syntax----------');
+console.log('----------Selecting DOM Elements----------');
 
-// Spread Syntax
+let h = document.getElementById('doc');
+let p1 = document.getElementsByClassName('p1');
+let p2 = document.getElementsByClassName('p2');
 
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
+console.log(h.innerText);
+console.log(p1[0].innerHTML);
+console.log(p2)
 
 
-// Spread Syntax
+// Modifying DOM Elements
 
-console.log('----------Spread Syntax----------');
+console.log('----------Modifying DOM Elements----------');
 
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
+let element = document.getElementById('doc');
+element.textContent = 'New Heading';
+element.setAttribute('name','BMW');
+element.classList.add('myClass');
+element.style.color = 'blue';
