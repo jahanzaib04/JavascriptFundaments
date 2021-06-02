@@ -1,126 +1,88 @@
-// Operator Precedence
+// Class Basics
 
-console.log('----------Operator Precedence----------');
+console.log('----------Class Basics----------');
 
+class D{
 
-// Spread Syntax
+}
+let d = new D();
+console.log(d)
 
-console.log('----------Spread Syntax----------');
 
-// Spread Syntax
+// Constructors and Properties
 
-console.log('----------Spread Syntax----------');
+console.log('----------Constructors and Properties----------');
 
+class Car{
+    constructor(id){
+        this.id = id;
+        this.color = 'blue';
+    }
+}
 
-// Spread Syntax
+let car = new Car(256);
+console.log(car.id);
+console.log(car.color);
 
-console.log('----------Spread Syntax----------');
 
-// Spread Syntax
+// Methods
 
-console.log('----------Spread Syntax----------');
+console.log('----------Methods----------');
 
+class Car2{
+    constructor(id){
+        this.id = id;
+    }
+    name(str){
+        return `${str} ID: ${this.id}`;
+    }
+}
 
-// Spread Syntax
+let car2 = new Car2(908);
+console.log(car2.name('BMW'))
 
-console.log('----------Spread Syntax----------');
 
-// Spread Syntax
+// Inheritance
 
-console.log('----------Spread Syntax----------');
+console.log('----------Inheritance----------');
 
+class Vehicle{
+    constructor(){
+        this.type = 'car';
+    }
+    start(){
+        return `Starting: ${this.type}`
+    }
+}
 
-// Spread Syntax
+class Car3 extends Vehicle {
+    constructor(){
+        super();
+        this.name = 'BMW'
+    }
+}
 
-console.log('----------Spread Syntax----------');
+let car3 = new Car3();
+console.log(car3.type)
+console.log(car3.name)
+console.log(car3.start())
 
-// Spread Syntax
+class Car4 extends Vehicle{
+    start(){
+        return 'in Car Start ' + super.start();
+    }
+}
 
-console.log('----------Spread Syntax----------');
+let car4 = new Car4();
+console.log(car4.start())
 
+// Creating and Import a Module
 
-// Spread Syntax
+console.log('----------Creating and Import a Module----------');
 
-console.log('----------Spread Syntax----------');
+import {Car5} from './models/Car.js';
 
-// Spread Syntax
+let car5 = new Car5(123);
+console.log(car5.id)
 
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
-
-
-// Spread Syntax
-
-console.log('----------Spread Syntax----------');
 
